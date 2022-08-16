@@ -11,9 +11,10 @@ BuildRequires:  cmake
 BuildRequires:  inotify-tools-devel
 BuildRequires:  libevdev-devel
 BuildRequires:  meson
- 
+BuildRequires:  wf-touch
+BuildRequires:  pkgconfig(wf-utils)
 #BuildRequires:  cmake(doctest)
-BuildRequires:  cmake(glm)
+BuildRequires:  pkgconfig(glm)
  
 BuildRequires:  pkgconfig(cairo)
 BuildRequires:  pkgconfig(egl)
@@ -28,9 +29,12 @@ BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-cursor)
 BuildRequires:  pkgconfig(wayland-protocols)
 BuildRequires:  pkgconfig(wayland-server)
+BuildRequires:  pkgconfig(xwayland)
 BuildRequires:  pkgconfig(wf-config) >= 0.7.0
 BuildRequires:  pkgconfig(wlroots) >= 0.15.0
 BuildRequires:  pkgconfig(xkbcommon)
+
+Requires: wf-utils
 
 %description
 Wayfire is a wayland compositor based on wlroots. It aims to create a
@@ -52,6 +56,7 @@ Development files for %{name}.
 %build
 %meson  \
         -Dtests=disabled \
+        -Dxwayland=enabled \
         -Duse_system_wfconfig=enabled \
         -Duse_system_wlroots=enabled
 %meson_build
