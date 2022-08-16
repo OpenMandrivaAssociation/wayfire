@@ -55,7 +55,6 @@ Development files for %{name}.
 
 %build
 %meson  \
-        -Dtests=disabled \
         -Dxwayland=enabled \
         -Duse_system_wfconfig=enabled \
         -Duse_system_wlroots=enabled
