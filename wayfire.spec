@@ -1,3 +1,5 @@
+%define _disable_ld_no_undefined 1
+
 Name:           wayfire
 Version:        0.7.4
 Release:        1
