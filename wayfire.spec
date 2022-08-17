@@ -13,7 +13,7 @@ BuildRequires:  libevdev-devel
 BuildRequires:  meson
 BuildRequires:  wf-touch
 BuildRequires:  pkgconfig(wf-utils)
-#BuildRequires:  cmake(doctest)
+BuildRequires:  cmake(doctest)
 BuildRequires:  pkgconfig(glm)
  
 BuildRequires:  pkgconfig(cairo)
@@ -58,8 +58,7 @@ Development files for %{name}.
 %meson  \
         -Dxwayland=enabled \
         -Duse_system_wfconfig=enabled \
-        -Duse_system_wlroots=enabled \
-        -Dtests=disabled
+        -Duse_system_wlroots=enabled
 %meson_build
  
 %install
