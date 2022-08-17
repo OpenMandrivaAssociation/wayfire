@@ -66,7 +66,7 @@ Development files for %{name}.
 %install
 %meson_install
 install -Dpm0644 %{name}.desktop %{buildroot}%{_datadir}/wayland-sessions/%{name}.desktop
-
+rm -f %{buildroot}%{_libdir}/libwftouch.a
 
 %files
 %license LICENSE
@@ -75,8 +75,9 @@ install -Dpm0644 %{name}.desktop %{buildroot}%{_datadir}/wayland-sessions/%{name
 %{_datadir}/%{name}/
 %{_datadir}/wayland-sessions/*.desktop
 %{_libdir}/%{name}/
+%{_libdir}/libwf-utils.so.0*
 
- 
+
 %files devel
 %{_libdir}/libwf-utils.so
 %{_libdir}/pkgconfig/*.pc
