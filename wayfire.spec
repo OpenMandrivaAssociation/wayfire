@@ -13,8 +13,8 @@ BuildRequires:  cmake
 BuildRequires:  inotify-tools-devel
 BuildRequires:  libevdev-devel
 BuildRequires:  meson
-BuildRequires:  wf-touch
-BuildRequires:  pkgconfig(wf-utils)
+#BuildRequires:  wf-touch
+#BuildRequires:  pkgconfig(wf-utils)
 BuildRequires:  cmake(doctest)
 BuildRequires:  pkgconfig(glm)
  
@@ -37,7 +37,7 @@ BuildRequires:  pkgconfig(wf-config) >= 0.7.0
 BuildRequires:  pkgconfig(wlroots) >= 0.15.0
 BuildRequires:  pkgconfig(xkbcommon)
 
-Requires: wf-utils
+#Requires: wf-utils
 
 %description
 Wayfire is a wayland compositor based on wlroots. It aims to create a
