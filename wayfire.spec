@@ -1,3 +1,5 @@
+%define _disable_ld_no_undefined 1
+
 Name:           wayfire
 Version:        0.7.4
 Release:        1
@@ -5,15 +7,15 @@ Summary:        3D wayland compositor
 Group:          WM/Wayfire
 License:        MIT
 URL:            https://github.com/WayfireWM/wayfire
-Source0:        https://github.com/WayfireWM/wayfire/archive/v%{version}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/WayfireWM/wayfire/archive/v%{version}/%{name}-%{version}.tar.xz
  
 BuildRequires:  cmake
 BuildRequires:  inotify-tools-devel
 BuildRequires:  libevdev-devel
 BuildRequires:  meson
-BuildRequires:  wf-touch
-BuildRequires:  pkgconfig(wf-utils)
-#BuildRequires:  cmake(doctest)
+#BuildRequires:  wf-touch
+#BuildRequires:  pkgconfig(wf-utils)
+BuildRequires:  cmake(doctest)
 BuildRequires:  pkgconfig(glm)
  
 BuildRequires:  pkgconfig(cairo)
@@ -35,7 +37,7 @@ BuildRequires:  pkgconfig(wf-config) >= 0.7.0
 BuildRequires:  pkgconfig(wlroots) >= 0.15.0
 BuildRequires:  pkgconfig(xkbcommon)
 
-Requires: wf-utils
+#Requires: wf-utils
 
 %description
 Wayfire is a wayland compositor based on wlroots. It aims to create a
@@ -64,7 +66,7 @@ Development files for %{name}.
 %install
 %meson_install
 install -Dpm0644 %{name}.desktop %{buildroot}%{_datadir}/wayland-sessions/%{name}.desktop
-
+rm -f %{buildroot}%{_libdir}/libwftouch.a
 
 %files
 %license LICENSE
@@ -73,8 +75,9 @@ install -Dpm0644 %{name}.desktop %{buildroot}%{_datadir}/wayland-sessions/%{name
 %{_datadir}/%{name}/
 %{_datadir}/wayland-sessions/*.desktop
 %{_libdir}/%{name}/
+%{_libdir}/libwf-utils.so.0*
 
- 
+
 %files devel
 %{_libdir}/libwf-utils.so
 %{_libdir}/pkgconfig/*.pc
