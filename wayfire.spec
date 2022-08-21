@@ -37,6 +37,8 @@ BuildRequires:  pkgconfig(wf-config) >= 0.7.0
 BuildRequires:  pkgconfig(wlroots) >= 0.15.0
 BuildRequires:  pkgconfig(xkbcommon)
 
+Recommends: wf-shell
+
 #Requires: wf-utils
 
 %description
