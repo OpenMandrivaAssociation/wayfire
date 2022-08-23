@@ -2,7 +2,7 @@
 
 Name:           wayfire
 Version:        0.7.4
-Release:        1
+Release:        2
 Summary:        3D wayland compositor
 Group:          WM/Wayfire
 License:        MIT
@@ -38,14 +38,14 @@ BuildRequires:  pkgconfig(wlroots) >= 0.15.0
 BuildRequires:  pkgconfig(xkbcommon)
 
 Recommends: wf-shell
-
-#Requires: wf-utils
+Recommends: xdg-desktop-portal-wlr
+Recommends: wayfire-plugins-extra
+Recommends: wf-osk
 
 %description
 Wayfire is a wayland compositor based on wlroots. It aims to create a
 customizable, extendable and lightweight environment without sacrificing its
 appearance.
- 
  
 %package        devel
 Summary:        Development files for %{name}
@@ -53,7 +53,6 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
  
 %description    devel
 Development files for %{name}.
- 
  
 %prep
 %autosetup -p1
