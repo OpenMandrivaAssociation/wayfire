@@ -37,6 +37,7 @@ BuildRequires:  pkgconfig(wf-config) >= 0.7.0
 BuildRequires:  pkgconfig(wlroots) >= 0.15.0
 BuildRequires:  pkgconfig(xkbcommon)
 
+Recommends: wcm
 Recommends: wf-shell
 Recommends: xdg-desktop-portal-wlr
 Recommends: wayfire-plugins-extra
