@@ -62,7 +62,8 @@ Development files for %{name}.
 %meson  \
         -Dxwayland=enabled \
         -Duse_system_wfconfig=enabled \
-        -Duse_system_wlroots=enabled
+        -Duse_system_wlroots=enabled \
+        -Dtests=disabled
 %meson_build
  
 %install
