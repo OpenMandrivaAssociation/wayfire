@@ -1,7 +1,7 @@
 %define _disable_ld_no_undefined 1
 
 Name:           wayfire
-Version:        0.8.0
+Version:        0.8.1
 Release:        1
 Summary:        3D wayland compositor
 Group:          WM/Wayfire
@@ -36,7 +36,7 @@ BuildRequires:  pkgconfig(wayland-protocols)
 BuildRequires:  pkgconfig(wayland-server)
 BuildRequires:  pkgconfig(xwayland)
 BuildRequires:  pkgconfig(wf-config) >= 0.8.0
-BuildRequires:  pkgconfig(wlroots) >= 0.16.2
+BuildRequires:  pkgconfig(wlroots) >= 0.17.0
 BuildRequires:  pkgconfig(xkbcommon)
 
 Recommends: wcm
