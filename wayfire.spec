@@ -7,7 +7,7 @@ Summary:        3D wayland compositor
 Group:          WM/Wayfire
 License:        MIT
 URL:            https://github.com/WayfireWM/wayfire
-Source0:        https://github.com/WayfireWM/wayfire/archive/v%{version}/%{name}-%{version}.tar.xz
+Source0:        https://github.com/WayfireWM/wayfire/releases/download/v%{version}/%{name}-%{version}.tar.xz
  
 BuildRequires:  cmake
 BuildRequires:  inotify-tools-devel
