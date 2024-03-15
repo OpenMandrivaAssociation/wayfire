@@ -86,7 +86,7 @@ rm -f %{buildroot}%{_libdir}/libwftouch.a
 %{_libdir}/libwf-utils.so.0*
 %{_libdir}/libwayfire-blur-base.so
 %{_prefix}/man/wayfire.1*
-%{_mandir}/man1/wayfire.1.*
+#{_mandir}/man1/wayfire.1.*
 
 
 %files devel
