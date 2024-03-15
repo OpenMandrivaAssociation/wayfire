@@ -61,6 +61,9 @@ Development files for %{name}.
 %autosetup -p1
 
 %build
+# As of wayfire 0.8.1 and LLVM 18.1 compiler crashing. Switch to GGC for now.
+export CC=gcc
+export CXX=g++
 %meson  \
         -Dxwayland=enabled \
         -Duse_system_wfconfig=enabled \
