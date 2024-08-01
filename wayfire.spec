@@ -2,7 +2,7 @@
 
 Name:           wayfire
 Version:        0.8.1
-Release:        1
+Release:        2
 Summary:        3D wayland compositor
 Group:          WM/Wayfire
 License:        MIT
