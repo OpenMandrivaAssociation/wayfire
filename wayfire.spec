@@ -36,7 +36,7 @@ BuildRequires:  pkgconfig(wayland-protocols)
 BuildRequires:  pkgconfig(wayland-server)
 BuildRequires:  pkgconfig(xwayland)
 BuildRequires:  pkgconfig(wf-config) >= 0.8.0
-BuildRequires:  pkgconfig(wlroots) >= 0.17.0
+BuildRequires:  pkgconfig(wlroots) >= 0.17.4
 BuildRequires:  pkgconfig(xkbcommon)
 
 Recommends: wcm
