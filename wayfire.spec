@@ -18,6 +18,7 @@ BuildRequires:  meson
 BuildRequires:  cmake(doctest)
 BuildRequires:  pkgconfig(glm)
 BuildRequires:  pkgconfig(wf-config)
+BuildRequiree:  gomp-devel
 BuildRequires:  pkgconfig(cairo)
 BuildRequires:  pkgconfig(egl)
 BuildRequires:  pkgconfig(glesv2)
