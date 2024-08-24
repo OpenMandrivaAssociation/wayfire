@@ -17,7 +17,7 @@ BuildRequires:  meson
 #BuildRequires:  pkgconfig(wf-utils)
 BuildRequires:  cmake(doctest)
 BuildRequires:  pkgconfig(glm)
- 
+BuildRequires:  pkgconfig(wf-config)
 BuildRequires:  pkgconfig(cairo)
 BuildRequires:  pkgconfig(egl)
 BuildRequires:  pkgconfig(glesv2)
