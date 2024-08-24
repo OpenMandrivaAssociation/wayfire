@@ -1,8 +1,8 @@
 %define _disable_ld_no_undefined 1
 
 Name:           wayfire
-Version:        0.8.1
-Release:        2
+Version:        0.9.0
+Release:        1
 Summary:        3D wayland compositor
 Group:          WM/Wayfire
 License:        MIT
