@@ -39,6 +39,7 @@ BuildRequires:  pkgconfig(xwayland)
 BuildRequires:  pkgconfig(wf-config) >= 0.8.0
 BuildRequires:  pkgconfig(wlroots-0.19)
 BuildRequires:  pkgconfig(xkbcommon)
+BuildRequires:  pkgconfig(yyjson)
 
 Recommends: wcm
 Recommends: wf-shell
