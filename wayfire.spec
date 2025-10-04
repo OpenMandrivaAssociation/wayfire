@@ -84,11 +84,13 @@ rm -f %{buildroot}%{_libdir}/libwftouch.a
 %{_bindir}/%{name}
 %{_datadir}/%{name}/
 %{_datadir}/wayland-sessions/*.desktop
+%{_datadir}/xdg-desktop-portal/wayfire-portals.conf
 %{_libdir}/%{name}/
 %{_libdir}/libwf-utils.so.0*
 %{_libdir}/libwayfire-blur-base.so
+%{_libdir}/libwayfire-move-drag-interface.a
+%{_libdir}/libwayfire-workspace-wall.a
 %{_mandir}/man1/wayfire.1.*
-
 
 %files devel
 %{_libdir}/libwf-utils.so
