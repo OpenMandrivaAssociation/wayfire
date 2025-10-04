@@ -1,7 +1,7 @@
 %define _disable_ld_no_undefined 1
 
 Name:           wayfire
-Version:        0.9.0
+Version:        0.10.0
 Release:        1
 Summary:        3D wayland compositor
 Group:          WM/Wayfire
@@ -37,7 +37,7 @@ BuildRequires:  pkgconfig(wayland-protocols)
 BuildRequires:  pkgconfig(wayland-server)
 BuildRequires:  pkgconfig(xwayland)
 BuildRequires:  pkgconfig(wf-config) >= 0.8.0
-BuildRequires:  pkgconfig(wlroots) >= 0.17.4
+BuildRequires:  pkgconfig(wlroots-0.19)
 BuildRequires:  pkgconfig(xkbcommon)
 
 Recommends: wcm
@@ -63,8 +63,8 @@ Development files for %{name}.
 
 %build
 # As of wayfire 0.8.1 and LLVM 18.1 compiler crashing. Switch to GGC for now.
-export CC=gcc
-export CXX=g++
+#export CC=gcc
+#export CXX=g++
 %meson  \
         -Dxwayland=enabled \
         -Duse_system_wfconfig=enabled \
