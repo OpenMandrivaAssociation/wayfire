@@ -64,6 +64,8 @@ Development files for %{name}.
 
 %build
 # As of wayfire 0.8.1 and LLVM 18.1 compiler crashing. Switch to GGC for now.
+# With wayfire 0.10 back again to GCC because wayfire with Clang crashing at runtime.
+# Dont switch back to Clang without re testing!
 export CC=gcc
 export CXX=g++
 %meson  \
