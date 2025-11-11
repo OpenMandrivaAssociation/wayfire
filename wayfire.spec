@@ -2,7 +2,7 @@
 
 Name:           wayfire
 Version:        0.10.0
-Release:        1
+Release:        2
 Summary:        3D wayland compositor
 Group:          WM/Wayfire
 License:        MIT
@@ -64,8 +64,10 @@ Development files for %{name}.
 
 %build
 # As of wayfire 0.8.1 and LLVM 18.1 compiler crashing. Switch to GGC for now.
-#export CC=gcc
-#export CXX=g++
+# With wayfire 0.10 back again to GCC because wayfire with Clang crashing at runtime.
+# Dont switch back to Clang without re testing!
+export CC=gcc
+export CXX=g++
 %meson  \
         -Dxwayland=enabled \
         -Duse_system_wfconfig=enabled \
