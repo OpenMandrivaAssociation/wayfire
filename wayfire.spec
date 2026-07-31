@@ -1,7 +1,7 @@
 %define _disable_ld_no_undefined 1
 
 Name:           wayfire
-Version:        0.10.1
+Version:        0.11
 Release:        1
 Summary:        3D wayland compositor
 Group:          WM/Wayfire
@@ -60,7 +60,7 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 Development files for %{name}.
  
 %prep
-%autosetup -p1
+%autosetup -p1 -n wayfire-0.11.0
 
 %build
 # As of wayfire 0.8.1 and LLVM 18.1 compiler crashing. Switch to GGC for now.
