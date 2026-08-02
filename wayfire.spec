@@ -12,6 +12,7 @@ Source0:        https://github.com/WayfireWM/wayfire/releases/download/v%{versio
 BuildRequires:  cmake
 BuildRequires:  inotify-tools-devel
 BuildRequires:  libevdev-devel
+BuildRequires:  atomic-devel
 BuildRequires:  meson
 #BuildRequires:  wf-touch
 #BuildRequires:  pkgconfig(wf-utils)
@@ -37,7 +38,7 @@ BuildRequires:  pkgconfig(wayland-protocols)
 BuildRequires:  pkgconfig(wayland-server)
 BuildRequires:  pkgconfig(xwayland)
 BuildRequires:  pkgconfig(wf-config) >= 0.8.0
-BuildRequires:  pkgconfig(wlroots-0.19)
+BuildRequires:  pkgconfig(wlroots-0.20)
 BuildRequires:  pkgconfig(xkbcommon)
 BuildRequires:  pkgconfig(yyjson)
 
