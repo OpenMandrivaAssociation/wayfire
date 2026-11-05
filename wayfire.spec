@@ -10,6 +10,7 @@ URL:            https://github.com/WayfireWM/wayfire
 Source0:        https://github.com/WayfireWM/wayfire/releases/download/v%{version}/%{name}-%{version}.tar.xz
  
 BuildRequires:  cmake
+BuildRequires:  gettext
 BuildRequires:  inotify-tools-devel
 BuildRequires:  libevdev-devel
 BuildRequires:  atomic-devel
