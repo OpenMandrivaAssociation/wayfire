@@ -86,6 +86,7 @@ rm -f %{buildroot}%{_libdir}/libwftouch.a
 %license LICENSE
 %doc README.md %{name}.ini
 %{_bindir}/%{name}
+%{_bindir}/wayfire-plugin
 %{_datadir}/%{name}/
 %{_datadir}/wayland-sessions/*.desktop
 %{_datadir}/xdg-desktop-portal/wayfire-portals.conf
@@ -95,6 +96,7 @@ rm -f %{buildroot}%{_libdir}/libwftouch.a
 %{_libdir}/libwayfire-move-drag-interface.a
 %{_libdir}/libwayfire-workspace-wall.a
 %{_mandir}/man1/wayfire.1.*
+%{_datadir}/locale/ro/LC_MESSAGES/wf-plugin-*
 
 %files devel
 %{_libdir}/libwf-utils.so
